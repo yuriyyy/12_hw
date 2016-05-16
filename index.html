@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="DOM&BOM homework">
+    <title>DOM&BOM</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<div class="info">
+  <div class="row values">
+    <h4> Emplyees quantity: </h4>
+    <span id="is_hired">0</span>
+  </div>
+  <div class="row values">
+    <h4> Average salary is: </h4>
+    <span id="avg_sal">0</span>
+  </div>
+  <div class="row values">
+    <h4> Emplyees limit is: </h4>
+    <span id="emp_lim">10</span>
+  </div>
+  <div class="row">
+    <ol id="employeeList"></ol>
+  </div>
+
+
+</div>
+<div class="get_data">
+  <form>
+    <input value="John" id="firstName" type="text" placeholder="First Name" name="firstName" required="true" />
+    <input value="Smith" id="lastName" type="text" placeholder="Last Name" name="lastName" required="true" />
+    <input value="1034" id="salary" type="number" placeholder="Salary" name="salary" required="true" />
+    <input value="SEO" id="position" type="text" placeholder="Position" name="position" required="true" />
+
+  <button class="addEmployee" id="newEmployeeBtn" type="submit">Add New emplyee</button>
+
+  </form>
+
+  <form class="setlim">
+    <input id="employeesLimitInput" type="number" name="employeesLimit">
+    <button type="submit" id="employeesLimit" type="submit">Employees limit</button>
+  </form>
+
+  <h2 id="message"></h2>
+</div>
+
+
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
